@@ -1,0 +1,858 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+   
+}
+@font-face {
+    font-family:Roboto-Regular;
+src:url(fuentes/Roboto-Regular.ttf);
+}
+@font-face { font-family: "LEMONMILK-Bold"; 
+src: url('./fuentes/LEMONMILK-Bold.otf'); }
+
+@font-face { font-family: "LEMONMILK-Light"; 
+    src: url('./fuentes/LEMONMILK-Light.otf'); }
+
+ /* header y footer */ 
+
+ .nav {
+    background: #0e0e0e;
+    height: 58px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+}
+
+.nav label a{
+color: white;
+font-size: 30px;
+margin-left: 30px;
+    font-family:Roboto-Regular;
+text-decoration: none;
+}
+
+.nav label a:link {
+    color: white;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-family: Roboto-Regular;
+    text-decoration: none;
+}
+
+.nav label a:visited {
+    color: white;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-family: Roboto-Regular;
+    text-decoration: none;
+}
+
+.nav ul {
+    display: flex;
+    padding-top: 12px;
+    justify-content: center;
+}
+
+.nav ul li {
+    margin-left:  17px;
+  
+}
+
+.nav ul li a {
+    color: white;
+    font-family: Roboto-Regular, sans-serif; 
+    font-size: 13px;
+}
+.nav ul li a:link {
+    text-decoration: none;
+    color: white;
+    font-family: Roboto-Regular, sans-serif;
+    font-size: 13px;
+}
+
+.nav ul li a:visited {
+    text-decoration: none;
+    color: white;
+    font-family: Roboto-Regular, sans-serif;
+    font-size: 13px;
+}
+ 
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    left: 90%;
+    top: 6px;
+    display: none;
+}
+
+ #check {
+     display: none;
+}
+
+.redes {
+    margin-top: 11px;
+    display: flex;
+    margin-right: 25px;
+}
+    
+.redes a img{
+    height: 25px;
+    width: 25px;
+    margin-right: 9px;
+}
+
+.cover {
+    height: 100vh;
+    background-image: url(../images/fondo.JPG);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0, 0, 0.25);
+    background-blend-mode: darken;
+}
+
+.cover_prod {
+    height: 550px;
+    background-image: url(../images/6.JPG);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0, 0, 0.50);
+    background-blend-mode: darken;
+}
+
+.titulo_index {
+    font-family: 'LEMONMILK-Bold';
+    font-size: 95px;
+    display: flex;
+    justify-content: center;  
+}
+
+.p-index {
+    font-size: 23px;
+}
+
+div h2 {
+   font-family: 'LEMONMILK-Light', sans-serif;
+   font-size: 17px;
+   justify-content: center;
+}
+
+#logo {
+    width: 45px;
+    height: 45px;
+    
+}
+
+.titulo_productos {
+    font-family: LEMONMILK-Bold, sans-serif;
+    font-size: 80px;
+
+    display: flex;
+    justify-content: center; 
+}
+
+h2 {
+    font-family: Roboto, sans-serif;
+   font-size: 20px;
+   justify-content: center;
+}
+.p-index {
+    text-align: center;
+    font-size: 23px;
+}
+div p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer_mobile {
+    display: none;
+}
+
+.final h3 {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+
+.final {
+    background-color: rgb(29, 28, 28);
+   color: rgba(236, 236, 236, 0.897);
+   padding-top: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+.final p {
+    margin-top: 5px; 
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.row {
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+.col_in{
+    margin-right: 70px;
+    margin-left: 70px;
+
+}
+
+
+/*INDEX*/ 
+.nos {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 6%;
+    padding-bottom: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #F5C302;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.formulario {
+    height: 180px;
+    margin-bottom: 5%;
+    display: flex;
+    width: 74%;
+    margin-left: 13%;
+    border: solid 3px#F5C302 ;
+    justify-content: center;
+    box-shadow: 0 0 10px #faae21, 0 0 15px #faae21, 0 0 15px #faae21;
+    padding-top: 22px;
+}
+
+.suscribir {
+    margin-top: 3px;
+    margin-right: 9px;
+    text-align: center;
+}
+
+.p_form {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.p-nos {
+    font-size: 28px;
+
+}
+
+.recuadro {
+    display: flex;
+    justify-content: center;
+}
+
+.email {
+    width: 500px;
+height: 40px;
+border-radius: 5px;
+border: solid 1px rgb(102, 98, 98);
+padding-left: 5px;
+}
+
+.cambio_sus {
+    background-color: black;
+    color: white;
+    width: 130px ;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+.cambio_sus:hover {
+    box-shadow: 0 0 10px  #faae21, 0 0 15px #faae21, 0 0 15px #faae21;
+    background-color: black;
+    color: white;
+    width: 130px ;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+.tit_productos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.tit_productos h2 {
+    font-family: 'LEMONMILK-Light', sans-serif;
+   font-size: 32px;
+}
+
+.agregar {
+    background-color:#F5C302;
+    width: 100%;
+    /* margin-left: 5%; */
+    box-shadow: none;
+    border:  none;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: Roboto, sans-serif;
+    margin-top: 15px;
+    
+}
+.agregar:hover {
+    background-color:#F5C302;
+    box-shadow: 0 0 10px  #faae21, 0 0 15px #faae21, 0 0 15px #faae21;
+    border: none;
+
+}
+
+.elegir {
+    margin-top: 20px;
+    
+}
+
+.productos {
+    margin-bottom: 30px;
+    width: 100%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+.precio_producto {
+    font-size: 20px;
+} 
+
+.cover-small {
+    height: 300px;
+    background-blend-mode: normal;
+    
+}
+
+.descripcion {
+    text-align: left;
+}
+
+.card-body {
+    padding-left:8%;
+    padding-right: 8%;
+}
+
+.comprarButton{
+    background-color: black;
+    box-shadow: none;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: Roboto, sans-serif;
+    border: none;
+    color: white;
+}
+
+.comprarButton:hover{
+    background-color: black;
+    box-shadow: 0 0 10px #1f1f1e, 0 0 15px #1f1f1e, 0 0 15px #1f1f1e;
+    border: none;
+    color: white;
+}
+
+.shopping-cart-quantity-input {
+    max-width: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+.shopping-cart-total {
+    min-height: 96px;
+}
+
+.shopping-cart-quantity-input {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px;
+}
+
+.shopping-cart-total {
+  min-height: 96px;
+}
+
+
+.carrito_margen {
+    margin-bottom: 30px;
+}
+ 
+.buttonDelete {
+    border: none;
+    background-color: #242424;
+    color: white;
+}
+.buttonDelete:hover {
+    border: none;
+    background-color: #242424;
+    color: white;
+}
+
+.btn-cart {
+    background-color: black;
+    color: white;
+    font-size: roboto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.div-btn-carrito {
+    margin-bottom: 50px;
+    width: 100%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+/* ------------FORM TARJETA------------ */
+
+.form_pagos {
+    width:  40%;
+   margin-left: 30%;
+   margin-right: 30%;
+   background-color: black;
+   height: 90vh;
+}
+
+.formulario-tarjeta {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width:  70%;
+   margin-left: 15%;
+   margin-right: 15%;
+   background-color: black;
+   padding: 10%;
+   margin-bottom: 50px;
+   margin-top: 20%;
+   height: 50vh;
+}
+
+
+.modal-header {
+   
+   background-color: black;
+   width: 70%;
+   margin-left: 15%;
+   margin-right: 15%;
+}
+
+.modal-content {
+    background-color: black;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.input_tarjeta {
+    width: 400px;
+    padding: 5px ;
+    padding-left: 10px ;
+    background-color: #faae21;
+    border: none;
+    border-radius: 10px;
+   
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.input_tarjeta:hover {
+    background-color:black;
+  
+}
+#nombreT {
+    margin-bottom: 7px;
+}
+
+.btn-enviar-form {
+    background-color: #faae21;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 50px;
+    width: 100px;
+}
+
+.btn-cerrar {
+    background-color: #424242;
+    color: white;
+    font-size: roboto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 40px;
+    width: 90%;
+    
+}
+.btn-modal-finalizado {
+    background-color: #424242;
+    color: white;
+    font-size: roboto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    border-radius: 15px;
+}
+.modal-header {
+    border: none;
+    margin-top: 35px;
+}
+
+.btn-enviar-form:hover {
+    background-color:#faae21;
+    box-shadow: 0 0 10px  #faae21, 0 0 15px #faae21, 0 0 15px #faae21;
+    border: none;
+}
+
+#exampleModalLabel {
+    color: rgb(233, 233, 233);
+}
+
+.modal-body {
+    color: rgb(218, 218, 218);
+    text-align: center;
+}
+
+#Modalcont, #Modalsus, #Modalform {
+    text-align: center;
+}
+/* ----------GALERIA ------------ */
+
+.tit_galeria {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.tit_galeria h2 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.galeria {
+	display: flex;
+	width: 88%;
+	margin: auto;
+	justify-content: center;
+	flex-wrap: wrap;
+    z-index: 1;
+    margin-bottom: 50px;
+}
+.galeria .foto {
+	width: 350px;
+	height: 350px;
+    position: relative;
+    right: 0;
+	/* margin-bottom: 35px; */
+	border-radius: 5px;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+	transition: 0.6s ease;
+}
+.galeria .foto:hover {
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+.foto img {
+	width: 350px;
+	height: 350px;
+	object-fit: cover;
+	border-radius: 5px;
+}
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to top, #7e7e7e96 0%, #2d2d2ea1 100%);
+	width: 100%;
+	height: 0;
+	transition: 0.55s ease;
+	overflow: hidden;
+}
+.overlay h3 {
+	color: #fff;
+	font-size: 25px;
+	font-family: 'Josefin Sans', sans-serif;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+.foto:hover .overlay {
+	height: 100%;
+	cursor: pointer;
+	border-radius: 5px;
+}
+/*---------------------*/
+.contenedor-modal.active {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.contenedor-modal.active img {
+	z-index: 3;
+	width: 700px;
+	height: 700px;
+}
+.contenedor-modal.active::after {
+	position: fixed;
+	content: '';
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(211, 211, 211, 0.459);
+}
+
+
+/* -------------CONTACT0-------------- */
+.contenedor_titulo {
+    background-image: url(../images/fondoform.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0, 0, 0.80);
+    background-blend-mode: darken;
+    
+}
+
+.titulo_contacto {
+    display: inline-flex;
+    justify-content: center;
+    
+}
+
+.titulo_contacto h2 {
+    margin-top: 9vh;
+    margin-bottom: 6vh;
+}
+.contacto {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.formulario_contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+    
+}
+.form-control {
+    background-color: #F5C302;
+    width: 60vw;
+    margin-left: 20vw;
+    border: none;
+}
+
+.form-control:hover {
+    background-color: #0f0f0f;
+}
+
+.nombre {
+    margin-bottom: 15px;
+}
+
+.mail_contacto {
+    margin-top: -8px;
+}
+
+#exampleFormControlTextarea1 {
+    margin-top: -22px;
+    min-height: 175px;
+}
+
+.btn_enviar {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    margin-left: 20vw;
+    height: 40px;
+    width: 120px;
+    color: white;
+}
+
+.btn_enviar:hover {
+    background-color:#1f1f1e ;
+    box-shadow: 0 0 10px #1f1f1e, 0 0 15px #1f1f1e, 0 0 15px #1f1f1e;
+}
+.titulo_contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_contacto h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+
+.titulo_contacto p {
+    font-size: 20px;
+    color: white;
+}
+
+
+/*mobile*/
+@media (max-width: 413px) {
+.row {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer {
+    display: none;
+}
+
+.footer_mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_mobile p {
+   font-size: 14px;
+   line-height: 15px;
+}
+
+.redes_mobile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+.redes_mobile img {
+    height: 25px;
+    width: 25px;
+   margin: 10px;
+}
+
+.final_serv {
+margin-top: 1900px;
+}
+
+.checkbtn {
+    display: block;
+    left: 88%;
+}
+
+.lista {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    background: rgb(20, 20, 20);
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    left: -100%;
+    transition: all .5s;
+    padding: 0;
+    opacity: 95%;
+       
+}
+
+.nav {
+    height: 60px;
+}
+.nav ul {
+    padding-bottom: 90%;
+}
+
+.nav ul li {
+    margin-top: 20px;
+    line-height: 30px;
+    margin-left: -2%;
+}
+
+.nav ul li a {
+    font-size: 18px;
+}
+
+#check:checked ~ ul{
+left: 0;
+}
+
+.redes {
+    display: none;
+}
+
+div h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 70px;
+    display: flex;
+    justify-content: center; 
+}
+
+h2 {
+    font-family: Roboto, sans-serif;
+   font-size: 15px;
+   justify-content: center;
+}
+
+div p {
+    text-align: center;
+}
+}
+
+.mobilecart {
+    display: flex;
+   
+    width: 80%;
+}

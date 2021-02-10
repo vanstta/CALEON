@@ -1,0 +1,52 @@
+[
+    {
+        "nombre": "Cuaderno",
+        "imagen": "url(images/2.JPG)",
+       "precio": 599.00,
+       "id": "1",
+       "descripcion": "Tapa dura - Formato A6 (10,5x14,8cm) - Tapa dura con laminado mate - 80 hojas booclel lisas de 80 gr + una hoja lisa de color + un sobre - Disponible en rojo, amarillo, cyan y magenta.",
+       "tamaño": "a5"
+    },
+    {
+        "nombre": "Cuadro",
+        "imagen": "url(images/cuadro.JPG)",
+       "precio": 799.00,
+       "id": "2",
+       "descripcion": "Ilustración en vinilo ploteada sobre fibrofácil de 5mm, laminado mate y marco de acrílico importado - Formato 21x29,7cm / 60x90 cm - Disponible en rojo, amarillo, cyan y magenta.",
+       "tamaño": "a4"
+       
+    
+    },
+    {
+        "nombre": "Mesa",
+        "imagen": "url(images/mesa.JPG)",
+       "precio": 5499.00,
+       "id": "3",
+       "descripcion": "Mesa ratona circular con superficie de acrílico con estructura metálica - Protección contra rayos UV - Formato 60x45cm. -  Disponible en rojo, amarillo, cyan y megenta.",
+       "tamaño": "unico"
+    },
+    {
+        "nombre": "Espejo",
+        "imagen": "url(images/espejo.JPG)",
+       "precio": 2199.00,
+       "id": "4",
+       "descripcion": "Espejo Cápsula con estructura de chapa y estante de acrílico -  Formato 25x70x10 cm. -  Disponible en rojo, amarillo, cyan y megenta. ",
+       "tamaño": "50cm x 30cm"
+    },
+    {
+        "nombre": "Lámpara",
+        "imagen": "url(images/lampara.JPG)",
+       "precio": 2599.00,
+       "id": "5",
+       "descripcion": "Lámpara LED con estructura de chapa y frente de acrílico - Formato 120x20 cm. - Disponible en rojo, amarillo, cyan y megenta.",
+       "tamaño": "a4"
+    },
+    {
+        "nombre": "Silla",
+        "imagen": "url(images/silla.JPG)",
+       "precio": 3799.00,
+       "id": "6",
+       "descripcion": "Silla metálica resistente - Medidas 81cm alto x 46cm ancho y 50cm profundidad - Disponible en rojo, amarillo, cyan y megenta.",
+       "tamaño": "unico"
+    }
+]
