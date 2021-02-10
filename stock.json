@@ -9,7 +9,7 @@
     },
     {
         "nombre": "Cuadro",
-        "imagen": "url(images/cuadro.JPG)",
+        "imagen": "url(images/cuadro.jpg)",
        "precio": 799.00,
        "id": "2",
        "descripcion": "Ilustración en vinilo ploteada sobre fibrofácil de 5mm, laminado mate y marco de acrílico importado - Formato 21x29,7cm / 60x90 cm - Disponible en rojo, amarillo, cyan y magenta.",
@@ -43,7 +43,7 @@
     },
     {
         "nombre": "Silla",
-        "imagen": "url(images/silla.JPG)",
+        "imagen": "url(images/silla.jpg)",
        "precio": 3799.00,
        "id": "6",
        "descripcion": "Silla metálica resistente - Medidas 81cm alto x 46cm ancho y 50cm profundidad - Disponible en rojo, amarillo, cyan y megenta.",
