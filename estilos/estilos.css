@@ -6,15 +6,6 @@
     box-sizing: border-box;
    
 }
-@font-face {
-    font-family:Roboto-Regular;
-src:url(fuentes/Roboto-Regular.ttf);
-}
-@font-face { font-family: "LEMONMILK-Bold"; 
-src: url('./fuentes/LEMONMILK-Bold.otf'); }
-
-@font-face { font-family: "LEMONMILK-Light"; 
-    src: url('./fuentes/LEMONMILK-Light.otf'); }
 
  /* header y footer */ 
 
@@ -32,7 +23,7 @@ src: url('./fuentes/LEMONMILK-Bold.otf'); }
 color: white;
 font-size: 30px;
 margin-left: 30px;
-    font-family:Roboto-Regular;
+font-family: Roboto, sans-serif; 
 text-decoration: none;
 }
 
@@ -41,7 +32,7 @@ text-decoration: none;
     font-size: 30px;
     margin-top: 40px;
     margin-left: 30px;
-    font-family: Roboto-Regular;
+    font-family: resitta;
     text-decoration: none;
 }
 
@@ -50,7 +41,7 @@ text-decoration: none;
     font-size: 30px;
     margin-top: 40px;
     margin-left: 30px;
-    font-family: Roboto-Regular;
+    font-family: resitta;
     text-decoration: none;
 }
 
@@ -67,20 +58,20 @@ text-decoration: none;
 
 .nav ul li a {
     color: white;
-    font-family: Roboto-Regular, sans-serif; 
+    font-family: Roboto, sans-serif; 
     font-size: 13px;
 }
 .nav ul li a:link {
     text-decoration: none;
     color: white;
-    font-family: Roboto-Regular, sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 13px;
 }
 
 .nav ul li a:visited {
     text-decoration: none;
     color: white;
-    font-family: Roboto-Regular, sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 13px;
 }
  
@@ -129,20 +120,16 @@ text-decoration: none;
     background-blend-mode: darken;
 }
 
-.titulo_index {
-    font-family: 'LEMONMILK-Bold';
+div h1 {
+    font-family: Roboto, sans-serif;
     font-size: 95px;
     display: flex;
     justify-content: center;  
 }
 
-.p-index {
-    font-size: 23px;
-}
-
 div h2 {
-   font-family: 'LEMONMILK-Light', sans-serif;
-   font-size: 17px;
+   font-family: Roboto, sans-serif;
+   font-size: 20px;
    justify-content: center;
 }
 
@@ -152,10 +139,9 @@ div h2 {
     
 }
 
-.titulo_productos {
-    font-family: LEMONMILK-Bold, sans-serif;
-    font-size: 80px;
-
+div h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 95px;
     display: flex;
     justify-content: center; 
 }
@@ -165,13 +151,9 @@ h2 {
    font-size: 20px;
    justify-content: center;
 }
-.p-index {
-    text-align: center;
-    font-size: 23px;
-}
+
 div p {
     text-align: center;
-    font-size: 18px;
 }
 
 .footer_mobile {
@@ -258,11 +240,6 @@ div p {
     font-weight: 500;
 }
 
-.p-nos {
-    font-size: 28px;
-
-}
-
 .recuadro {
     display: flex;
     justify-content: center;
@@ -275,7 +252,6 @@ border-radius: 5px;
 border: solid 1px rgb(102, 98, 98);
 padding-left: 5px;
 }
-
 .cambio_sus {
     background-color: black;
     color: white;
@@ -295,6 +271,8 @@ padding-left: 5px;
     border: none;
 }
 
+/* -----------PRODUCTOS-------------- */
+
 .tit_productos {
     display: flex;
     justify-content: center;
@@ -304,8 +282,8 @@ padding-left: 5px;
 }
 
 .tit_productos h2 {
-    font-family: 'LEMONMILK-Light', sans-serif;
-   font-size: 32px;
+    font-size: 35px;
+    font-weight: 500;
 }
 
 .agregar {
@@ -327,27 +305,19 @@ padding-left: 5px;
 
 }
 
-.elegir {
-    margin-top: 20px;
-    
-}
-
 .productos {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     width: 100%;
     padding-left: 7.5%;
     padding-right: 7.5%;
 }
-
-.precio_producto {
-    font-size: 20px;
-} 
 
 .cover-small {
     height: 300px;
     background-blend-mode: normal;
     
 }
+
 
 .descripcion {
     text-align: left;
@@ -358,31 +328,28 @@ padding-left: 5px;
     padding-right: 8%;
 }
 
-.comprarButton{
+.btn-success{
     background-color: black;
     box-shadow: none;
     padding: 8px;
     border-radius: 8px;
     font-family: Roboto, sans-serif;
     border: none;
-    color: white;
 }
-
-.comprarButton:hover{
+.btn-success:hover{
     background-color: black;
     box-shadow: 0 0 10px #1f1f1e, 0 0 15px #1f1f1e, 0 0 15px #1f1f1e;
     border: none;
-    color: white;
 }
 
 .shopping-cart-quantity-input {
-    max-width: 40px;
+    max-width: 45px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background: rgb(0, 0, 0);
     padding: 5px;
 }
-
+  
 .shopping-cart-total {
     min-height: 96px;
 }
@@ -399,164 +366,10 @@ padding-left: 5px;
   min-height: 96px;
 }
 
-
 .carrito_margen {
     margin-bottom: 30px;
 }
- 
-.buttonDelete {
-    border: none;
-    background-color: #242424;
-    color: white;
-}
-.buttonDelete:hover {
-    border: none;
-    background-color: #242424;
-    color: white;
-}
 
-.btn-cart {
-    background-color: black;
-    color: white;
-    font-size: roboto;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: none;
-    border-radius: 15px;
-}
-
-.div-btn-carrito {
-    margin-bottom: 50px;
-    width: 100%;
-    padding-left: 7.5%;
-    padding-right: 7.5%;
-}
-
-/* ------------FORM TARJETA------------ */
-
-.form_pagos {
-    width:  40%;
-   margin-left: 30%;
-   margin-right: 30%;
-   background-color: black;
-   height: 90vh;
-}
-
-.formulario-tarjeta {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   width:  70%;
-   margin-left: 15%;
-   margin-right: 15%;
-   background-color: black;
-   padding: 10%;
-   margin-bottom: 50px;
-   margin-top: 20%;
-   height: 50vh;
-}
-
-
-.modal-header {
-   
-   background-color: black;
-   width: 70%;
-   margin-left: 15%;
-   margin-right: 15%;
-}
-
-.modal-content {
-    background-color: black;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-.input_tarjeta {
-    width: 400px;
-    padding: 5px ;
-    padding-left: 10px ;
-    background-color: #faae21;
-    border: none;
-    border-radius: 10px;
-   
-    margin-left: 10px;
-    margin-top: 15px;
-}
-.input_tarjeta:hover {
-    background-color:black;
-  
-}
-#nombreT {
-    margin-bottom: 7px;
-}
-
-.btn-enviar-form {
-    background-color: #faae21;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border: none;
-    border-radius: 15px;
-    margin-top: 50px;
-    width: 100px;
-}
-
-.btn-cerrar {
-    background-color: #424242;
-    color: white;
-    font-size: roboto;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border: none;
-    border-radius: 15px;
-    margin-top: 40px;
-    width: 90%;
-    
-}
-.btn-modal-finalizado {
-    background-color: #424242;
-    color: white;
-    font-size: roboto;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border: none;
-    border-radius: 15px;
-}
-.modal-header {
-    border: none;
-    margin-top: 35px;
-}
-
-.btn-enviar-form:hover {
-    background-color:#faae21;
-    box-shadow: 0 0 10px  #faae21, 0 0 15px #faae21, 0 0 15px #faae21;
-    border: none;
-}
-
-#exampleModalLabel {
-    color: rgb(233, 233, 233);
-}
-
-.modal-body {
-    color: rgb(218, 218, 218);
-    text-align: center;
-}
-
-#Modalcont, #Modalsus, #Modalform {
-    text-align: center;
-}
 /* ----------GALERIA ------------ */
 
 .tit_galeria {
@@ -604,7 +417,7 @@ padding-left: 5px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	background-image: linear-gradient(to top, #7e7e7e96 0%, #2d2d2ea1 100%);
+	background-image: linear-gradient(to top, #cfd9df96 0%, #e2ebf0a1 100%);
 	width: 100%;
 	height: 0;
 	transition: 0.55s ease;
@@ -651,7 +464,6 @@ padding-left: 5px;
 	left: 0;
 	background-color: rgba(211, 211, 211, 0.459);
 }
-
 
 /* -------------CONTACT0-------------- */
 .contenedor_titulo {
@@ -717,7 +529,6 @@ padding-left: 5px;
     margin-left: 20vw;
     height: 40px;
     width: 120px;
-    color: white;
 }
 
 .btn_enviar:hover {
@@ -849,10 +660,4 @@ h2 {
 div p {
     text-align: center;
 }
-}
-
-.mobilecart {
-    display: flex;
-   
-    width: 80%;
 }

@@ -6,12 +6,11 @@
     <title>Productos</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
             integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        
+        <link rel="stylesheet" href="css/animate.css">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
-        
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
    
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
@@ -21,7 +20,7 @@
             <label for="check" class="checkbtn" id="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
-            <label > <a href="index.html"><img id="logo" src="./images/logo.JPG" alt="logo caleon"></a></label>
+            <label > <a href="index.html"><img id="logo" src="images/logo.JPG" alt="logo caleon"></a></label>
             <ul class="lista">
                 <li>
                     <a href="index.html">inicio</a>
@@ -40,55 +39,131 @@
                 </li>
             </ul>
             <div class="redes">
-                <a href="#"> <img class="icon" src="./images/logoig.png" alt="logo IG">
+                <a href="#"> <img class="icon" src="images/logoig.png" alt="logo IG">
                 </a>
-                <a href="#"> <img class="icon" src="./images/logofb.png" alt="logo FB">
+                <a href="#"> <img class="icon" src="images/logofb.png" alt="logo FB">
                 </a>
-                <a href="#"> <img class="icon" src="./images/logopt.png" alt="logo Pinterest">
+                <a href="#"> <img class="icon" src="images/logopt.png" alt="logo Pinterest">
                 </a>
             </div>
         </nav>
   
     </div>
     <div class=" encabezado cover_prod  d-flex justify-content-center align-items-center flex-column">
-        <h1 class="titulo_productos">In process</h1>
-        <p class="p-index">Acá encontrarás esa dósis justa de color, que lo cambia todo</p>
+        <h1>In process</h1>
+        <p>Acá encontrarás esa dósis justa de color, que lo cambia todo</p>
     </div>
 
     </header>
     <div class="tit_productos">
 <h2 >productos </h2>
 </div>
-    <div class="productos lista_productos">
-        <div class="row row-cols-1 row-cols-md-3" id="prueba">
+    <section class="productos">
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col mb-4">
+                <div class="item card">
+                    <div class="cover cover-small" style="background-image: url(images/2.JPG);">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Cuaderno</h3>
+                        <p class="descripcion">Tapa dura - Formato A6 (10,5x14,8cm) - Tapa dura con laminado mate - 80 hojas booclel lisas de 80 gr + una hoja lisa de color + un sobre - Disponible en rojo, amarillo, cyan y magenta.</p>
+                        <h4 class="precio_producto"><strong>$699,00</strong></h4>
+                        <button class="agregar">Agregar al carrito</button>
+                    </div>
+                </div>
             </div>
-        </div>
-<!-- Carrito de compras -->
-   
-    <section class="shopping-cart " id="carrito">
-        <div class="container" >
-            <hr>
-            <div class="row">
-                <div class="col-6">
-                    <div class="shopping-cart-header prod">
-                        <h6>Producto</h6>
+            <div class="col mb-4">
+                <div class="item card">
+                    <div class="cover cover-small" style="background-image: url(images/cuadro.jpg);">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Cuadros</h3>
+                        <p class="descripcion">Ilustración en vinilo ploteada sobre fibrofácil de 5mm, laminado mate y marco de acrílico importado - Formato 21x29,7cm / 60x90 cm - Disponible en rojo, amarillo, cyan y magenta.</p>
+                        <h4 class="precio_producto"><strong>$999,00</strong></h4>
+                        <button class="agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="item card">
+                    <div class="cover cover-small" style="background-image: url(images/mesa.JPG);">
+
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Mesa</h3>
+                        <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, facere totam ab dignissimos, deserunt quidem quos minima eius corrupti odio error, voluptas natus. Eaque faci.</p>
+                        <h4 class="precio_producto"><strong>$5499,00</strong></h4>
+                        <button class="agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col mb-4">
+                <div class="item card">
+                    <div class="cover cover-small" style="background-image: url(images/espejo.JPG);">
+                    <img class="cover-small cover-hidden" src="./images/espejo.JPG" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Espejo</h3>
+                        <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt ab autem odio aspernatur alias explicabo facere beatae pariatur illo. </p>
+                        <h4 class="precio_producto"><strong>$2599,00</strong></h4>
+                        <button class="agregar">Agregar al carrito</button>
                     </div>
                     
                 </div>
-       
+            </div>
+            <div class="col mb-4">
+                <div class="item card">
+                    <div class="cover cover-small" style="background-image: url(images/lampara.JPG);">
+
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Lámpara</h3>
+                        <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt ab autem odio aspernatur alias explicabo facere beatae pariatur illo. </p>
+                        <h4 class="precio_producto"><strong>$1999,00</strong></h4>
+                        <button class="agregar">Agregar al carrito</button>
+                    </div>
+                    </div>
+                
+            </div>
+            <div class="col mb-4">
+                <div class="item card">
+                    <div class="cover cover-small" style="background-image: url(images/silla.jpg);">
+
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Silla</h3>
+                        <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt ab autem odio aspernatur alias explicabo facere beatae pariatur illo. </p>
+                        <h4 class="precio_producto"><strong>$3499,00</strong></h4>
+                        <button class="agregar">Agregar al carrito</button>
+                    </div>
+                    </div>
+                
+            </div>
+      
+    </section>
+    <section class="shopping-cart">
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
                 <div class="col-2">
-                    <div class="shopping-cart-header prec">
+                    <div class="shopping-cart-header">
                         <h6 class="text-truncate">Precio</h6>
                     </div>
                 </div>
-                <div class="col-4 cant">
-                    <div class="shopping-cart-header ">
+                <div class="col-4">
+                    <div class="shopping-cart-header">
                         <h6>Cantidad</h6>
                     </div>
                 </div>
             </div>
-<!-- Stock de productos (JSON) -->
-            <div class="carrito_compras carrito">
+
+            <div class=" cart">
 
             </div>
         
@@ -98,69 +173,14 @@
                         <p class="mb-0">Total</p>
                         <p class="ml-4 mb-0 shoppingCartTotal">$0</p>
                        
-                        <button class="btn  ml-auto comprarButton" type="button" id="btn-llamar" value="llamar formulario">Comprar</button>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
                     </div>
                 </div>
             </div>
         </div>
-   
-        </section>
-
-        <div class="div-btn-carrito">
-            <button class="btn-cart"> <strong>VER CARRITO</strong> </button>
-        </div>
-       
-        <!-- Modal formulario de pagos -->
-        <div class="modal fade show form_pagos" id="modalform" role="dialog" aria-hidden="true">
-            <div class="modal-dialog ">
-                <div class="modal-content">
-                    <div class="modal-header">
-            <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
-            <label for="inputNombre"></label>
-            <input class="input_tarjeta"  type="text"  maxlength="19"autocomplete="off" placeholder="Nombre y apellido"required>
-
-            <label for="email"></label>
-            <input class="input_tarjeta"  type="email" name="email" id="email" placeholder="correo@ejemplo.com" required>
-
-            <label for="inputNumero"></label>
-            <input class="input_tarjeta "type="text" id="nombreT" maxlength="19" autocomplete="off" placeholder="Número de tarjeta"required>
-        
-           <input class="input_tarjeta " type="text" id="inputNombre" maxlength="19" autocomplete="off" placeholder="MM/AA" required>
-        
-            <label for="inputCCV"></label>
-            <input class="input_tarjeta " type="text" id="inputCCV" maxlength="3" placeholder="CVC" required>
-         
            
-            <label for="dni"></label>
-            <input class="input_tarjeta " type="text" id="inputDNI" maxlength="8" placeholder="DNI" required>
-                 
-                    
-            <button type="submit" class="btn-enviar-form" data-toggle="modal" data-target="#Modalform">Enviar</button>
-            <button type="submit" class="btn-cerrar" >Cerrar</button>
-            </form>
-        </div>
-        </div>
-        
-        </div>
-        </div>
-      
-  <!-- Modal botón enviar -->
-  <div class="modal fade" id="Modalform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">La compra se realizó de manera exitosa!</h5>
-      </div>
-      <div class="modal-body">
-        Recibirás un mail con los datos de la operación.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-modal-finalizado btn-secondary" data-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- ----FOOTER---- -->
+        </section>
             <footer class="final ">
                 <div class="footer">
                 <div class="container ">
@@ -188,11 +208,11 @@
             </div>
                 <div class="footer_mobile">
                     <div class="redes_mobile">
-                        <a href="#"> <img class="icon" src="./images/logoig.png" alt="logo IG">
+                        <a href="#"> <img class="icon" src="images/logoig.png" alt="logo IG">
                         </a>
-                        <a href="#"> <img class="icon" src="./images/logofb.png" alt="logo FB">
+                        <a href="#"> <img class="icon" src="images/logofb.png" alt="logo FB">
                         </a>
-                        <a href="#"> <img class="icon" src="./images/logopt.png" alt="logo Pinterest">
+                        <a href="#"> <img class="icon" src="images/logopt.png" alt="logo Pinterest">
                         </a>
                     </div>
                     <ul>
@@ -212,7 +232,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
