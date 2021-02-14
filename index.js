@@ -1,11 +1,13 @@
 // ----SELECTORES----
 $('.encabezado').hide()
+$('.form_pagos').hide()
 $('.encabezado').slideDown(1500)
 const carrito = document.querySelector('#carrito')
 const contenedorCarrito = document.querySelector('.carrito_compras')
 const divProductos = document.querySelector('#divProductos')
 const listaProductos = document.querySelector(".lista_productos")
 const comprarButton = document.querySelector('.comprarButton');
+// const quitar = document.querySelector('.buttonLess')
 let articulosCarrito = [];
 
 // ----LISTENERS----
@@ -15,7 +17,7 @@ listaProductos.addEventListener('click', agregarProductos)
 document.addEventListener('DOMContentLoaded', () =>{
 
   $.ajax({
-    url: './stock.json',
+    url: 'stock.json',
     success: function (data, status, xhr) {
       stockProductos = data;
       cargarListaProductos(data);
@@ -28,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () =>{
       console.log(errorThrown)
     }
   });
- 
-  articulosCarrito = JSON.parse(localStorage.getItem('carrito')) ||[];
+  
+  articulosCarrito = JSON.parse(localStorage.getItem('carrito'))||[];
   insertarCarritoHTML()
 
 })
@@ -39,14 +41,14 @@ carrito.addEventListener('click', quitarProducto);
 // ---FUNCIONES---
 
 function cargarListaProductos(productos) {
- 
+  
   $('#lista-productos').hide();
   productos.forEach((producto) => {
 
     // const { nombre, imagen, precio, id, vendedor } = producto;
 
     const divCard = document.createElement('div');
-   
+    
     divCard.innerHTML = `
     <div class="col mb-4">
     <div class="item card producto">
@@ -56,16 +58,9 @@ function cargarListaProductos(productos) {
             <h3 class="card-title">${producto.nombre}</h3>
             <p class="descripcion">${producto.descripcion}</p>
             <h4 class="precio_producto"><strong>$${producto.precio}</strong></h4>
+           
             <button class="agregar"data-id="${producto.id}">Agregar al carrito</button>
-            <div class="elegir">
-                <label>Color</label">
-                    <select data-id="${producto.value}"name="color" id="color">
-                        <option value="rojo">Rojo</option>
-                        <option value="amarillo">Amarillo</option>
-                        <option value="cyan">Cyan</option>
-                        <option value="magenta">Magenta</option>
-                    </select>
-            </div>
+            
         </div>
     </div>
 </div>
@@ -80,7 +75,7 @@ function cargarListaProductos(productos) {
 function quitarProducto(e) {
   if (e.target.classList.contains('buttonDelete')) {
     const productoId = e.target.getAttribute('data-id');
-   
+    
     articulosCarrito = articulosCarrito.filter(producto => producto.id != productoId);
 
     insertarCarritoHTML();
@@ -114,7 +109,7 @@ function obtenerDatos (producto){
    const existe = articulosCarrito.some(producto => producto.id == productoAgregado.id);
 
    if (existe) {
-   
+    
      const productos = articulosCarrito.map(producto => {
        if (producto.id === productoAgregado.id) {
          producto.cantidad++;
@@ -125,18 +120,18 @@ function obtenerDatos (producto){
      });
      articulosCarrito = [...productos];
    } else {
- 
+  
      articulosCarrito.push(productoAgregado);
    }
  
    insertarCarritoHTML();
    guardarStorage()
-   updateShoppingCartTotal()
+   updateShoppingCartTotal() 
  }
 
  function guardarStorage() {
   localStorage.setItem('carrito', JSON.stringify(articulosCarrito));
- 
+  
 }
 
 
@@ -152,6 +147,7 @@ function    insertarCarritoHTML() {
              <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
 
                  <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">${nombre}</h6>
+                
              </div>
          </div>
          <div class="col-2">
@@ -170,18 +166,18 @@ function    insertarCarritoHTML() {
              
          </div>
      </div>`;
- 
+  
   contenedorCarrito.appendChild(crearDiv)
 
   crearDiv.querySelector('.buttonLess')
   crearDiv.addEventListener('change', quantityChanged);
- 
+  
   })
- 
+  
 }
 
 function updateShoppingCartTotal() {
- 
+  
   let total = 0;
   const shoppingCartTotal = document.querySelector('.shoppingCartTotal');
   const shoppingCartItems = document.querySelectorAll('.shoppingCartItem');
@@ -221,6 +217,7 @@ function limpiarCarrito () {
 
 $('.btn-cart').click(function(){
   $('.shopping-cart').show()
+  updateShoppingCartTotal();
   if($('.shopping-cart').show()) {
     $('.btn-cart').hide()
   }
@@ -233,7 +230,7 @@ $('#btn-llamar').click(function(){
 $('.btn-cerrar, .btn-modal-finalizado').click(function() {
  setTimeout(function(){
 location.reload()
-
+$('.encabezado').hide()
  })
 })
 
